@@ -52,8 +52,14 @@ aside{
 }
 
 .logo{
-  font-weight: 400;
-  font-size: 1.3rem;  
+  width: 12rem;
+  border-radius: 1rem; 
+  transition: transform 0.3s ease;
+  margin: 1rem;
+}
+
+.logo:hover{
+    transform: scale(1.05) translateZ(-30px);
 }
 
 .menu{
@@ -79,7 +85,7 @@ aside{
 
 
 .boton-menu.active{
-    background-color: var(--clr-white);
+    background-color: white;
     color: var(--clr-main);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -95,7 +101,7 @@ aside{
     right: 0;
     background-color: transparent;
     border-bottom-right-radius: 1rem;
-    box-shadow: 0 1rem 0 var(--clr-white);
+    box-shadow: 0 1rem 0 white;
 }
 
 .boton-menu.active::after{
@@ -107,7 +113,7 @@ aside{
     right: 0;
     background-color: transparent;
     border-top-right-radius: 1rem;
-    box-shadow: 0 -1rem 0 var(--clr-white);
+    box-shadow: 0 -1rem 0 white;
 }
 
 .boton-carrito{
@@ -135,7 +141,7 @@ aside{
 /*Main*/
 
 main{
-    background-color: var(--clr-white) ;
+    background-color: white ;
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
