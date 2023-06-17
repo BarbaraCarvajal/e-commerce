@@ -169,9 +169,12 @@ function actualizarBotonesAgregar(){
 }
 let productosEnCarrito;
 
-const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+
+
+
 if(productosEnCarritoLS){
-     productosEnCarrito = productosEnCarritoLS;
+     productosEnCarrito = JSON.parse(productosEnCarritoLS);
      actualizarNumerito(); 
 }else{
     productosEnCarrito = [];

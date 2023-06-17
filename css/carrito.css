@@ -54,7 +54,7 @@
 
 .carrito-producto-eliminar:hover{
     transform: scale(1.05) translateZ(-30px);
-
+}
 .carrito-acciones{
     display: flex;
     justify-content: space-between;
