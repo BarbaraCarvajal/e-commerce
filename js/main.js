@@ -164,11 +164,18 @@ botonesCategoria.forEach(boton=>{
 function actualizarBotonesAgregar(){
     botonesAgregar = document.querySelectorAll(".producto-agregar");
     botonesAgregar.forEach(boton =>{
-        boton.addEventListener("click", agregarAlCarrito)
+        boton.addEventListener("click", agregarAlCarrito);
     });
 }
+let productosEnCarrito;
 
-const productosEnCarrito = [];
+const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+if(productosEnCarritoLS){
+     productosEnCarrito = productosEnCarritoLS;
+     actualizarNumerito(); 
+}else{
+    productosEnCarrito = [];
+}
 
 function agregarAlCarrito(evento){
     const idBoton = evento.currentTarget.id;
