@@ -1,0 +1,1 @@
+const openMenu = document.querySelector("#open-menu");
